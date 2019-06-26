@@ -1,0 +1,5 @@
+<? 
+	phpversion();
+	phpinfo();
+
+?>
