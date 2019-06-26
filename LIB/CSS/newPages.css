@@ -1,0 +1,291 @@
+/*Criação dos estilos próprios*/ 
+	* {
+  		  margin: 0px;
+  		  padding: 0px;
+	}
+	
+
+	body { 
+		overflow-x: hidden;
+	}
+
+
+	/*Criando o topo da página */
+	/*Topo*/
+	.topo { 
+		height: 8%
+	} 
+		
+	.topo .topNav { 
+		background-color: #066fa8;
+		overflow: hidden;
+
+	} 	
+	
+	.topo .topNav a { 
+		float: left; 
+	    color: #F1F1F1;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	} 
+	
+	.topNav .fig1 img { 
+		float: left; 
+	}
+	
+	.topNav p { 
+		float: left; 
+		color: #F1F1F1;	
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+	
+	.topNav .fig2 img { 
+		float: right;
+	} 
+	
+	
+	
+		/* Change the color of links on hover */
+	.topo .topNav a:hover {
+		background-color: #f9a16b; 
+		height: 60px;
+		color: #F1F1F1;
+	}
+
+	/* Add a color to the active/current link */
+	.topo .topNav a.active {
+    background-color: #4CAF50;
+    color: white;
+	}
+
+
+	
+		
+	/*Corpo da Página*/ 	
+	.corpo { 
+		width: 90%; 
+		float: left;
+		margin-left: 250px;
+	}
+	
+	.menu { 
+		width: 10%; 
+		float: left; 
+		height: auto;
+	}
+
+	/*NOVO MENU */	
+	.sidenav {
+   		 width: 250px;
+ 		 position: absolute;
+ 	     z-index: 1;
+    	 top: 100px;
+    	 background: #066fa8;
+    	 overflow-x: hidden;
+    	 padding: 8px 0;
+		}
+
+	.sidenav a {
+    	padding: 6px 8px 6px 16px;
+    	text-decoration: none;
+    	font-size: 15px;
+    	color: white;
+    	display: block;
+	}
+
+	.sidenav a:hover {
+		background-color: #f9a16b; 
+	    color: #064579;
+	}
+
+
+	@media screen and (max-height: 450px) {
+    	.sidenav {padding-top: 15px;}
+    	.sidenav a {font-size: 18px;}
+	}
+
+
+	#meuMenuLateral a { 
+		position: absolute; 
+		left: -210px; 
+		transition: 0.3s; 
+		padding: 15px; 
+		width: 250px; 
+		text-decoration: none; 
+		font-size: 20px; 
+		color: white; 
+		border-radius: 0 5px 5px 0; 
+	} 
+	
+	#meuMenuLateral a:hover { 
+		left: 0; 
+	} 
+	
+	#erroRegistro { 	
+		top: 120px; 
+		background-color: #066fa8;
+	} 
+	
+	#erroIntegracao { 
+		top: 200px; 
+		background-color: #066fa8;
+
+	} 
+	
+
+	/*Tooltip*/ 
+	.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 120px;
+		background-color: #555;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 0;
+		position: absolute;
+		z-index: 1;
+		bottom: 125%;
+		left: 50%;
+		margin-left: -60px;
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+
+	.tooltip .tooltiptext::after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: #555 transparent transparent transparent;
+	}
+
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+	}	
+	
+	.corpo iframe { 
+		display: block;
+   		margin: 0 auto; 
+   		width: 95%;
+   		height: 750px;
+   		border-style: none;
+   		overflow-x: auto;
+
+	} 
+
+		
+	/*RodaPé da Página*/ 
+	/*RODAPÉ*/ 
+	.rodape { 
+		position: fixed; 
+		bottom: 0; 
+		padding: 10px;
+		background-color: #066fa8;
+		width: 100%;
+		float: none;
+		
+	} 
+
+	.rodape p { 
+		color: #F1F1F1; 
+		font-size: 15px; 
+		text-align: center; 
+		margin: 0 0 0 0; 
+		padding: 0 0 0 0;	
+	} 
+
+	.rodape span#timepage { 
+		color: #F1F1F1; 
+		font-size: 15px; 
+		text-align: center; 
+	}
+	
+
+
+	/*Alarmes Especiais*/
+	.erro-total { 
+		background-color: #FF6347; 
+	}
+
+	.incorreto-parcial { 
+		background-color: #F4A460;
+	} 
+
+	.contrato-chamado { 
+		background-color: #FAFAD2;
+	}
+	
+	
+	
+	fieldset.borda-form { 
+		background-color: #DCDCDC;
+		margin-left: 25px;
+		border: solid 2px #000080 !important; 
+		border-left: 5px solid #f9a16b !important;
+		width: 95%;
+		padding: 0 10px 10px 10px; 
+		border-bottom: none; 
+		box-shadow: 5px 5px 5px 2px #A9A9A9;
+	}
+	
+	legend.borda-form { 
+		width: auto !important; 
+		border: none; 
+		font-size: 20px;
+ 
+	}
+	
+	
+	.borda-erro { 
+		background-color: #DCDCDC;
+		border:  2px solid #000080; 
+		border-left: 5px solid #f9a16b;
+		height: 105px;
+		width: 95%;
+		box-shadow: 5px 5px 5px 2px #A9A9A9;
+
+	}
+
+
+	.dica { 
+		position: relative; 
+	} 
+
+
+	.dicaTexto { 
+		visibility: hidden; 
+		width: 120px; 
+		background-color: #066fa8; 
+		color: #F1F1F1; 
+		font-size: 10px; 
+		text-align: center; 
+		border-radius: 6px; 
+		padding: 5px 0; 
+		position: absolute;
+  	    z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 1s;
+	}
+
+	.dica:hover span.dicaTexto{
+			visibility: visible; 
+			opacity: 1;
+			}
